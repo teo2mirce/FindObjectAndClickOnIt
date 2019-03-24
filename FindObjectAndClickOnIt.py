@@ -34,7 +34,6 @@ while(1):
 	loc = np.where(res >= threshold)
 	for pt in zip(*loc[::-1]):  # Switch collumns and rows
 		#winsound.Beep(frequency, duration)
-		print("macar special");
 		cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0, 0, 255), 2)
 		#https://pyautogui.readthedocs.io/en/latest/mouse.html
 		pyautogui.moveTo(pt[0]+np.random.randint(0,50), pt[1]+ np.random.randint(0,50),duration=0.4,tween=pyautogui.easeInOutQuad)
@@ -50,7 +49,6 @@ while(1):
 	loc = np.where(res >= threshold)
 	for pt in zip(*loc[::-1]):  # Switch collumns and rows
 		#winsound.Beep(frequency, duration)
-		print("macar");
 		cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0, 0, 255), 2)
 		#https://pyautogui.readthedocs.io/en/latest/mouse.html
 		pyautogui.moveTo(pt[0]-30+np.random.randint(0,20), pt[1]+100 - np.random.randint(0,20),duration=0.4,tween=pyautogui.easeInOutQuad)
